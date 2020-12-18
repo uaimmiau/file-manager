@@ -4,7 +4,7 @@ let path = require("path");
 let hbs = require('express-handlebars');
 // let bodyParser = require("body-parser");
 let formidable = require('formidable');
-const PORT = 3000;
+let PORT = process.env.PORT || 3000;
 let context = {
     files: []
 };
